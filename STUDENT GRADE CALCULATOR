@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class grades
+{
+    public static void main(String[]args)
+    {
+        System.out.println("Enter the marks of 5 subjects out of 100 each ");
+        Scanner scan = new Scanner(System.in);
+        float s1 = scan.nextFloat();
+        float s2 = scan.nextFloat();
+        float s3 = scan.nextFloat();
+        float s4 = scan.nextFloat();
+        float s5 = scan.nextFloat();
+
+        float total= s1+s2+s3+s4+s5;
+        float percentage = total/5;
+        System.out.println("The total marks obtained are : "+total);
+        System.out.println("The Average Percentage is : "+percentage);
+        if(percentage>=90)
+        {
+            System.out.println("The Grade is A");
+        }
+        else if(percentage>=80)
+        {
+            System.out.println("The Grade is B");            
+        }
+        else if(percentage>=70)
+        {
+            System.out.println("The Grade is C");
+        }
+        else if(percentage>=60)
+        {
+            System.out.println("The Grade is D");
+        }
+        else if(percentage>=40)
+        {
+            System.out.println("The Grade is E");
+        }  
+        else 
+        {
+            System.out.println("The Grade is F");
+        }  
+        scan.close();   
+    }   
+}
